@@ -9,10 +9,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class WebResponse<T> {
+public class AddressResponse {
 
-    private T data;
-    private String errors;
+    private String id;
 
-    private PageResponse paging;
+    private String city;
+
+    private String country;
+
+    private String postalCode;
 }
